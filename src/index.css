@@ -1,0 +1,37 @@
+@import "tailwindcss";
+body{
+    background-color:rgb(10, 29, 51);
+}
+
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 500;
+    padding-bottom: 0px;
+    &:hover{
+      color: #03e2ff;
+    }
+  }
+  
+  /* Aktiv bo‘lganda rang va shrift */
+  
+  
+  /* 🔽 Pastki chiziqni yaratish */
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;  /* Matndan 3px pastda */
+    right: 100%;   /* O‘ng tomondan boshlanadi */
+    width: 0;
+    height: 1px;
+    background: #03e2ff;
+    transition: all 0.4s ease-in-out;
+  }
+  
+  /* 🔽 Aktiv bo‘lganda chiziq harakat qiladi */
+  .nav-link.active-link::after {
+    right: 0;  /* Chapga harakat qiladi */
+    width: 100%;
+  }
