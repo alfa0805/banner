@@ -5,7 +5,7 @@ function Home() {
   return (
     <div className="max-w-[1240px] h-full  mx-auto ">
       <Header/>
-      <Outlet/> 
+      <Outlet/>
     </div>
   )
 }

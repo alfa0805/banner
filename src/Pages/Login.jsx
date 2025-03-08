@@ -22,7 +22,7 @@ function Login() {
         password,
       })
       .then((res) => {
-        // console.log(res?.data?.data?.refreshToken?.token);
+        console.log(res?.data?.data?.accessToken?.token);
         localStorage.setItem('accessToken',res?.data?.data?.accessToken?.token)
         toast.success("Muvaffaqiyatli o‘tildi");
         navigate("/home/banner");

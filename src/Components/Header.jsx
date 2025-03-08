@@ -12,11 +12,11 @@ function Header() {
       <div className="fixed z-50 w-[140px] h-[95vh] mt-3 border-2 border-gray-100 rounded-xl  justify-between items-centr
         max-[500px]:flex max-[500px]:border-2 max-[500px]:h-[70px]  max-[500px]:w-full max-[500px]:border-none
         max-[500px]:bg-gray-900 max-[500px]:mt-0 max-[500px]:rounded-none max-[500px]:px-5">
-          <h2 className="text-white text-3xl font-bold pl-[15px] py-3">POST
-            <span className="text-red-700 text-2xl font-medium">test</span>
+          <h2 className="text-white text-3xl font-medium pl-[15px] py-3">BAN
+            <span className="text-red-700 text-2xl font-medium">ner</span>
           </h2>
           <nav className="flex flex-col pt-5 px-5 gap-3 max-[500px]:hidden">
-          <NavLink to="/home"  
+          <NavLink to="/home/bosh"  
               className={({ isActive }) => (isActive ? "nav-link active-link" : "nav-link text-white")}>
               Home
             </NavLink>
